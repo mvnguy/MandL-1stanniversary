@@ -55,9 +55,15 @@ nav a {
 }
 
 .timeline-item img {
-    width: 150px;
-    height: auto;
+    width: 250px;  /* Increase width (default was 150px) */
+    height: auto;   /* Keep aspect ratio */
     border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a soft shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.timeline-item img:hover {
+    transform: scale(1.1);  /* Optional: Slight zoom effect on hover */
 }
 
 .notes-container {
