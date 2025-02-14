@@ -35,3 +35,15 @@ function createHeart() {
     }, 5000);
 }
 setInterval(createHeart, 300);
+
+document.addEventListener("DOMContentLoaded", function() {
+    let correctName = "Bao Luong dep gai";  // Required name
+    let gfName = prompt("Tên của em là gì? Trả lời phải đúng nha.");
+
+    if (gfName !== correctName) {
+        alert("Oops! This page is only for Bao Luong dep gai! ❌");
+        window.location.href = "wrong_name.html"; // Redirect if incorrect
+    } else {
+        document.getElementById("personal-greeting").innerText = `Happy Anniversary, ${gfName}! ❤️`;
+    }
+});
