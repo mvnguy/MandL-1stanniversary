@@ -47,3 +47,20 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("personal-greeting").innerText = `Happy Anniversary, ${gfName}! ❤️`;
     }
 });
+
+function toggleMusic() {
+    let music = document.getElementById("bg-music");
+    let button = document.getElementById("music-toggle");
+
+    if (music.paused) {
+        music.play().then(() => {
+            button.innerText = "⏸ Pause Music";
+        }).catch(error => {
+            console.error("Playback error:", error);
+            alert("Music cannot autoplay due to browser restrictions. Click anywhere on the page first, then try again.");
+        });
+    } else {
+        music.pause();
+        button.innerText = "🎶 Play Music";
+    }
+}
