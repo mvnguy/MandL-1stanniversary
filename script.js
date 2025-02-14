@@ -1,5 +1,5 @@
 // Typing Effect for Love Letter
-const loveLetter = "My love, every moment with you is a dream come true. Thank you for filling my life with joy, love, and laughter. I can't wait for our future together. Happy anniversary! ❤️";
+const loveLetter = "My love, every moment with you is a dream come true. Thank you for filling my life with joy, love, and laughter. I can't wait to see you again and our future together. Happy anniversary baby! ❤️";
 let index = 0;
 
 function typeText() {
@@ -13,9 +13,9 @@ window.onload = typeText;
 
 // Love Notes Reveal
 const loveNotes = [
-    "You make my heart race every time I see you! 💓",
-    "Every moment with you is a treasure. 💖",
-    "I love you more than words can say. 💕"
+    "Vợ yêu của anh luôn hạnh phúc và cười nhiều. Vì anh lại yêu vợ hơn mỗi khi vợ cười! 💓",
+    "Anh sẽ luôn là 'Anh đây' mỗi khi em cần và gọi anh. 💖",
+    "Anh yêu Em nhiều hơn! 💕"
 ];
 
 function revealNote(index) {
